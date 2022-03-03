@@ -1,0 +1,12 @@
+@import '../../styles/variables.scss';
+
+.header{
+    position: fixed;
+    width: 100%;
+    background-color: $color-darkLight;
+    &__container{
+        display: flex;
+        align-items: center;
+        height: 73px;
+    }
+}
