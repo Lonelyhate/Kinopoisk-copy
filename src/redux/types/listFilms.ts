@@ -3,6 +3,9 @@ export interface ListMoviesState {
     loading: boolean;
     error: string | null;
     page: number;
+    title: string;
+    description: string
+    img: null | string
 }
 
 export enum ListMoviesActionTypes {
@@ -20,6 +23,9 @@ interface FetchListMoviesSuccesAction {
     payload: {
         movies: any[];
         page: number;
+        title: string;
+        description: string;
+        img: string
     };
 }
 

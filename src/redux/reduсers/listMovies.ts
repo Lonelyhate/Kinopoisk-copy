@@ -4,7 +4,10 @@ const initialState: ListMoviesState = {
     movies: [],
     loading: false,
     error: null,
-    page: 1
+    page: 1,
+    title: '',
+    description: '',
+    img: null
 }
 
 export const listMoviesReducer = (state = initialState, action: ListMoviesAction): ListMoviesState => {
@@ -22,6 +25,9 @@ export const listMoviesReducer = (state = initialState, action: ListMoviesAction
                 ...state,
                 movies: action.payload.movies,
                 page: action.payload.page,
+                title: action.payload.title,
+                description: action.payload.description,
+                img: action.payload.img,
                 loading: false,
                 error: null
             }

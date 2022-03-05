@@ -1,0 +1,8 @@
+@import '../../styles/variables.scss';
+
+.list-movies-page{
+    padding-top: 73px;
+    &__container{
+        background-color: $color-white;
+    }
+}
