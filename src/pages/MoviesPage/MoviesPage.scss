@@ -1,0 +1,18 @@
+@import '../../styles/variables.scss';
+
+.movies-page{
+    background-color: $color-background;
+    &__container{
+        padding-top: 113px;
+        height: 100vh;
+        background-color: $color-white;
+    }
+    &__title{
+        color: $color-title;
+        font-size: 32px;
+        line-height: 40px;
+        font-weight: 700;
+        padding-left: 50px;
+        margin-bottom: 50px;
+    }
+}

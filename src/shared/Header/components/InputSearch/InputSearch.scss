@@ -2,7 +2,7 @@
 
 .input-search{
     width: 340px;
-    background-color: $color-white;
+    background-color: rgba(242,242,242,.15);
     display: flex;
     border-radius: 4px;
     overflow: hidden;
@@ -15,6 +15,7 @@
         font-size: 15px;
         border: none;
         outline: none;
+        background-color: transparent;
         &::placeholder{
             color: $color-gray;
         }
@@ -26,6 +27,7 @@
         margin-top: 4px;
         cursor: pointer;
         svg{
+            fill: $color-gray;
             width: 18px;
             height: 18px;
         }
