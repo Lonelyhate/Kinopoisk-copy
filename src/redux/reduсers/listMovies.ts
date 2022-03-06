@@ -7,7 +7,8 @@ const initialState: ListMoviesState = {
     page: 1,
     title: '',
     description: '',
-    img: null
+    img: null,
+    activeList: 0
 }
 
 export const listMoviesReducer = (state = initialState, action: ListMoviesAction): ListMoviesState => {
@@ -28,6 +29,7 @@ export const listMoviesReducer = (state = initialState, action: ListMoviesAction
                 title: action.payload.title,
                 description: action.payload.description,
                 img: action.payload.img,
+                activeList: action.payload.activeList,
                 loading: false,
                 error: null
             }

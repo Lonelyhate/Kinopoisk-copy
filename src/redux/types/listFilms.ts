@@ -6,6 +6,7 @@ export interface ListMoviesState {
     title: string;
     description: string
     img: null | string
+    activeList: number
 }
 
 export enum ListMoviesActionTypes {
@@ -25,7 +26,8 @@ interface FetchListMoviesSuccesAction {
         page: number;
         title: string;
         description: string;
-        img: string
+        img: string;
+        activeList: number
     };
 }
 

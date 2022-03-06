@@ -1,0 +1,15 @@
+@import '../../../../styles/variables.scss';
+
+.list-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid $color-gray;
+    margin-bottom: -1px;
+    &__title{
+        color: $color-black;
+        border-bottom: 3px solid #f60;
+        display: inline-block;
+        padding: 0 0 14px;
+    }
+}

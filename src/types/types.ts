@@ -49,3 +49,35 @@ export type ListMoviesType = {
         | ListMoviesImg.TOP_100_POPULAR_FILMS_IMG
         | ListMoviesImg.TOP_AWAIT_FILMS_IMG;
 };
+
+//Сортировка фильмов
+export enum SortItem {
+    SERIATIM = 'По порядку',
+    NUMBER_OF_RATING = 'По количеству оценок',
+    RATING = 'По рейтингу',
+    RELEASE_DATE = 'По дате выхода',
+    TITLE = 'По названию',
+}
+
+export enum SortItemApi {
+    SERIATIM = '',
+    NUMBER_OF_RATING = 'votes',
+    RATING = 'rating',
+    RELEASE_DATE = 'date',
+    TITLE = 'title',
+}
+
+export type SortType = {
+    sortItemTitle:
+        | SortItem.SERIATIM
+        | SortItem.NUMBER_OF_RATING
+        | SortItem.RATING
+        | SortItem.RELEASE_DATE
+        | SortItem.TITLE;
+    sortItemApi:
+        | SortItemApi.SERIATIM
+        | SortItemApi.NUMBER_OF_RATING
+        | SortItemApi.RATING
+        | SortItemApi.RELEASE_DATE
+        | SortItemApi.TITLE;
+};

@@ -27,6 +27,7 @@ export const fetchListMovies = (index: number) => {
                 payload: {
                     movies: response.films,
                     page: response.pagesCount,
+                    activeList: index,
                     title:
                         index === 0
                             ? '250 лучших фильмов'
