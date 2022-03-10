@@ -2,6 +2,7 @@
 
 .sort-movies{
     position: relative;
+    z-index: 3;
     &__button{
         background-color: transparent;
         padding: 0;

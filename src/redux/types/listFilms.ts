@@ -1,5 +1,7 @@
+import { IMovie } from "../../types/types";
+
 export interface ListMoviesState {
-    movies: any[];
+    movies: IMovie[];
     loading: boolean;
     error: string | null;
     page: number;
@@ -22,7 +24,7 @@ interface FetchListMoviesAction {
 interface FetchListMoviesSuccesAction {
     type: ListMoviesActionTypes.FETCH_LIST_MOVIES_SUCCESS;
     payload: {
-        movies: any[];
+        movies: IMovie[];
         page: number;
         title: string;
         description: string;

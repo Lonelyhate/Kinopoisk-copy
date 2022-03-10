@@ -1,0 +1,28 @@
+.watched-movies{
+    padding: 24px 0;
+    display: flex;
+    align-items: center;
+    &__title{
+        color: rgba(0, 0, 0, 0.6);
+        font-size: 15px;
+        font-weight: 400;
+        flex-shrink: 0;
+    }
+    &__progress{
+        position: relative;
+        width: 100%;
+        height: 24px;
+        margin-left: 12px;
+        background-color: rgba(34, 34, 34, 0.06);
+    }
+    &__active-progress{
+        position: absolute;
+        font-size: 13px;
+        top: 0;
+        left: 0;
+        height: 24px;
+        display: flex;
+        align-items: center;
+        padding-left: 10px;
+    }
+}

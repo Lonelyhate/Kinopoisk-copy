@@ -81,3 +81,25 @@ export type SortType = {
         | SortItemApi.RELEASE_DATE
         | SortItemApi.TITLE;
 };
+
+export type countries = {
+    country: string;
+};
+
+export type genres = {
+    genre: string
+}
+
+export interface IMovie {
+    filmId: number;
+    countries: countries[];
+    nameRu: string;
+    nameEn: string;
+    filmLength: string;
+    genres: genres[];
+    posterUrl: string;
+    posterUrlPreview: string;
+    rating: string;
+    ratingVoteCount: number;
+    year: number;
+}

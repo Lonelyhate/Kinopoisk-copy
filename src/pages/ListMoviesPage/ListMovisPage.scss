@@ -5,4 +5,7 @@
     &__container{
         background-color: $color-white;
     }
+    &__content{
+        max-width: 900px;
+    }
 }

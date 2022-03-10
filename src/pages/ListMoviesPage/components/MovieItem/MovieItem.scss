@@ -1,0 +1,137 @@
+@import '../../../../styles/variables.scss';
+
+.movie-item{
+    position: relative;
+    display: flex;
+    padding: 24px 20px;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+    margin-top: -1px;
+    &::before{
+        content: '';
+        position: absolute;
+        bottom: 0;
+        display: block;
+        height: 1px;
+        width: 100%;
+        background-color: $color-background;
+    }
+    &::after{
+        content: '';
+        position: absolute;
+        top: 0;
+        display: block;
+        height: 1px;
+        width: 100%;
+        background-color: $color-background;
+    }
+    &:hover{
+        background-color: $color-background;
+    }
+    &__img{
+        position: relative;
+        width: 64px;
+        height: 96px;
+        border-radius: 4px;
+        margin-right: 20px;
+        cursor: pointer;
+        img{
+            display: block;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 4px;
+        }
+    }
+    &__rating-green{
+        position: absolute;
+        top: 4px;
+        left: -6px;
+        height: 19px;
+        width: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: $color-green;
+        color: $color-white;
+        font-size: 11px;
+        font-weight: 600;
+        border-radius: 2px;
+    }
+    &__play{
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        width: 26px;
+        height: 18px;
+        background-color: rgba(255, 255, 255, 0.9);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        svg{
+            fill: $color-black;
+            margin-left: 2px;
+        }
+    }
+    &__info{
+        max-width: 290px;
+    }
+    &__title{
+        font-size: 18px;
+        color: $color-black;
+        font-weight: 500;
+        line-height: 22px;
+        margin-bottom: 5px;
+    }
+    &__middle{
+        font-size: 13px;
+        color: $color-black;
+        margin-bottom: 4px;
+    }
+    &__bottom{
+        margin-top: 6px;
+        font-size: 13px;
+        color: $color-gray;
+    }
+    &__rating{
+        color: $color-green;
+        font-size: 18px;
+        font-weight: 500;
+        display: flex;
+        margin-left: auto;
+        margin-right: 45px;
+        span{
+            color: $color-gray;
+            font-size: 12px;
+            margin-top: 5.5px;
+            margin-left: 4px;
+        }
+    }
+    &__btn{
+        position: relative;
+        width: 144px;
+        height: 32px;
+        background-color: $color-white;
+        border: 1px solid rgba(0,0,0,.1);
+        border-radius: 4px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.04);
+        font-size: 13px;
+        margin-bottom: 10px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+        &:hover{
+            background-color: $color-background;
+        }
+        svg{
+            position: absolute;
+            margin-right: 5px;
+            width: 14px;
+            height: 14px;
+            fill: $color-gray;
+            left: 9px;
+        }
+    }
+}

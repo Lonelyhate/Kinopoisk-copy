@@ -27,6 +27,7 @@ export const MoviesPageContent: FC = () => {
     const onClickList = (index: number) => {
         dispatch(fetchListMovies(index));
         navigate('/movies/list');
+        localStorage.setItem('listMoviesDescr', index + '')
     };
 
     return (

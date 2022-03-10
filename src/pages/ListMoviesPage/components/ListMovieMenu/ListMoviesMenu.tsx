@@ -13,6 +13,7 @@ const ListMoviesMenu: FC = () => {
 
     const onClickList = (index: number) => {
         dispatch(fetchListMovies(index));
+        localStorage.setItem('listMoviesDescr', index + '')
     };
 
     return (
