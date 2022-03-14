@@ -7,9 +7,10 @@ import { BsFillPlayFill } from 'react-icons/bs';
 
 interface MovieItemProps {
     movie: IMovie;
+    onClickVideo: (id: number) => void;
 }
 
-const MovieItem: FC<MovieItemProps> = ({ movie }) => {
+const MovieItem: FC<MovieItemProps> = ({ movie, onClickVideo }) => {
     let filmLength = (time: string) => {
         let timeArray = time.split(':');
         let timeFrist = timeArray[0];
@@ -20,7 +21,7 @@ const MovieItem: FC<MovieItemProps> = ({ movie }) => {
 
     return (
         <article className="movie-item">
-            <div className="movie-item__img">
+            <div onClick={() => onClickVideo(movie.filmId)} className="movie-item__img">
                 <img src={movie.posterUrlPreview} alt={movie.nameRu} />
                 <span className="movie-item__rating-green">{movie.rating}</span>
                 <span className="movie-item__play">

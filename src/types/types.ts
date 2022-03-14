@@ -90,6 +90,12 @@ export type genres = {
     genre: string
 }
 
+export interface IVideoMovie {
+    url: string;
+    name: string;
+    site: string
+}
+
 export interface IMovie {
     filmId: number;
     countries: countries[];
